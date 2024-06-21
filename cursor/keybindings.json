@@ -56,33 +56,15 @@
   },
   // move between editor
   {
-    "key": "ctrl+h",
-    "command": "-editor.action.startFindReplaceAction",
-    "when": "editorFocus || editorIsOpen"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "-testing.toggleTestingPeekHistory",
-    "when": "testing.isPeekVisible"
-  },
-  {
-    "key": "ctrl+k",
+    "key": "ctrl+w k",
     "command": "workbench.action.focusAboveGroup"
   },
   {
-    "key": "ctrl+k ctrl+up",
-    "command": "-workbench.action.focusAboveGroup"
-  },
-  {
-    "key": "ctrl+j",
+    "key": "ctrl+w j",
     "command": "workbench.action.focusBelowGroup"
   },
   {
-    "key": "ctrl+k ctrl+down",
-    "command": "-workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "ctrl+l",
+    "key": "ctrl+w l",
     "command": "workbench.action.focusRightGroup"
   },
   {
@@ -90,24 +72,42 @@
     "command": "-workbench.action.focusRightGroup"
   },
   {
-    "key": "ctrl+h",
+    "key": "ctrl+w h",
     "command": "workbench.action.focusLeftGroup"
   },
   {
     "key": "ctrl+k ctrl+left",
     "command": "-workbench.action.focusLeftGroup"
   },
-  // change editor window size
+  // resize view
   {
-    "key": "shift+K",
-    "command": "workbench.action.increaseViewSize",
-    "when": "editorFocus"
+    "key": "ctrl+k",
+    "command": "workbench.action.increaseViewSize"
   },
   {
-    "key": "shift+H",
-    "command": "workbench.action.decreaseViewSize",
-
-    "when": "editorFocus"
+    "key": "ctrl+h",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  // resize terminal
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus"
   },
   // keybindings for explorer
   {

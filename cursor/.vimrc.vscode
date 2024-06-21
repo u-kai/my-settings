@@ -1,0 +1,19 @@
+inoremap <silent> jj <ESC>
+set expandtab
+set hlsearch
+set incsearch
+set smartcase
+set autoindent
+set number
+set tabstop=4
+set shiftwidth=4
+set guioptions+=1
+set clipboard=unnamed
+syntax on
+set smartindent
+if has('vim_starting')
+	let &t_SI .= "\e[6 q"
+	let &t_EI .= "\e[2 q"
+	let &t_SR .= "\e[4 q"
+endif
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
