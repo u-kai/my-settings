@@ -1,0 +1,160 @@
+[
+  // サイドバー開閉
+  {
+    "key": "ctrl+n",
+    "command": "workbench.explorer.fileView.focus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.quickOpen"
+  },
+  // create new file
+  {
+    "key": "shift+n",
+    "command": "-workbench.action.files.newUntitledFile",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  // delete file
+  {
+    "key": "shift+d",
+    "command": "deleteFile",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  // copy file
+  {
+    "key": "shift+c",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  // cut file
+  {
+    "key": "shift+m",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  // paste file
+  {
+    "key": "shift+p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  // split editor
+  {
+    "key": "ctrl+B shift+\\",
+    "command": "workbench.action.splitEditorRight",
+    "when": "editorFocus"
+  },
+  // move between editor
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-testing.toggleTestingPeekHistory",
+    "when": "testing.isPeekVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+up",
+    "command": "-workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+down",
+    "command": "-workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  // change editor window size
+  {
+    "key": "shift+K",
+    "command": "workbench.action.increaseViewSize",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+H",
+    "command": "workbench.action.decreaseViewSize",
+
+    "when": "editorFocus"
+  },
+  // keybindings for explorer
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "o",
+    "command": "list.toggleExpand",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "workbench.files.action.refreshFilesExplorer",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
+  // open/close terminal
+  {
+    "key": "ctrl+B j",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+B k",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  // split terminal
+  {
+    "key": "ctrl+B shift+\\",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  // move terminal
+  {
+    "key": "ctrl+B l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+B h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  }
+]
