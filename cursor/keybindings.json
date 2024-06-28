@@ -24,6 +24,12 @@
     "command": "explorer.newFile",
     "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
   },
+  // create new file
+  {
+    "key": "shift+k",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus && listFocus &&explorerViewletVisible && !inputFocus"
+  },
   // delete file
   {
     "key": "shift+d",
